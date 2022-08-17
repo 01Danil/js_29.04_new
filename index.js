@@ -1,15 +1,17 @@
-let string1 = "I'm a teacher";
-console.log(string1, ":", typeof string1);
+let condition = false;
+console.log("value = ", condition);
 
-let age = "32";
+if (condition) {
+  console.log("value = ", condition);
+}
 
-let price = "   5   ";
 
-let num = 8;
-console.log(num, ":", typeof num);
 
-let undef;
-console.log(undef, ":", typeof undef);
-
-let nullValue = null;
-console.log(nullValue, ":", typeof nullValue);
+/* 6-ть вариантов неправды
+	false
+	undefined
+	null
+	NaN
+	'' - пустая строка
+	0 +0 -0
+*/
