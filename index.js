@@ -1,19 +1,15 @@
-//variable
-/*
-	имя переменной только с буквы
-	начинается только с буквы или _ или $
-	лфтиница, без пробелов, цифры не первые
-	регистрозависимая user User UseR
-	camelCase
-	отвечает на вопрос Что в ней?
-*/
+let string1 = "I'm a teacher";
+console.log(string1, ":", typeof string1);
 
-let num1; // объявление
-console.log(num1);
-//console.log(num2);
-let num2 = 22;
-console.log(num2);
-num1 = 11; // инициализация
-num1 = 66;
-console.log(num1);
-const num3 = 33;
+let age = "32";
+
+let price = "   5   ";
+
+let num = 8;
+console.log(num, ":", typeof num);
+
+let undef;
+console.log(undef, ":", typeof undef);
+
+let nullValue = null;
+console.log(nullValue, ":", typeof nullValue);
