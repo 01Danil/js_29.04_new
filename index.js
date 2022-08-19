@@ -1,5 +1,5 @@
-const number1 = prompt("enter number 1", "10");
-const number2 = prompt("enter number 2", "20");
+// const number1 = prompt("enter number 1", "10");
+// const number2 = prompt("enter number 2", "20");
 
 /**
  * Description function
@@ -11,17 +11,20 @@ const isErrorInputNumber = function (num) {
 };
 /**
  * Return summa two number.
- * @param {number} number1
- * @param {number} number2
+ * @param {number} number1 default = 1
+ * @param {number} number2 default = 2
  * @returns {number}
  */
-const calcSummaTwoNumber = function (number1, number2) {
+const calcSummaTwoNumber = function (number1=1, number2=2) {
   return number1 + number2;
 };
-const check = isErrorInputNumber(number1) || isErrorInputNumber(number2);
-if (check===false) { //!check - bad practic
-  const summaUser = calcSummaTwoNumber(Number(number1), Number(number2));
-  console.log(summaUser);
-} else {
-  console.log("not possible calc summa");
-}
+//debugger
+console.log(calcSummaTwoNumber(undefined, 45));
+
+// const check = isErrorInputNumber(number1) || isErrorInputNumber(number2);
+// if (check===false) { //!check - bad practic
+//   const summaUser = calcSummaTwoNumber(Number(number1), Number(number2));
+//   console.log(summaUser);
+// } else {
+//   console.log("not possible calc summa");
+// }
