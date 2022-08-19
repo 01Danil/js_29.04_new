@@ -18,12 +18,10 @@ const isErrorInputNumber = function (num) {
 const calcSummaTwoNumber = function (number1, number2) {
   return number1 + number2;
 };
-const check = isErrorInputNumber(number1) || isErrorInputNumber(number2)
-if (check) {
-	console.log('not possible calc summa');
+const check = isErrorInputNumber(number1) || isErrorInputNumber(number2);
+if (check===false) { //!check - bad practic
+  const summaUser = calcSummaTwoNumber(Number(number1), Number(number2));
+  console.log(summaUser);
 } else {
-	const summaUser = calcSummaTwoNumber(Number (number1), Number (number2));
-	console.log(summaUser);
+  console.log("not possible calc summa");
 }
-
-
