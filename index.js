@@ -1,15 +1,18 @@
 /**
  *
- * @param {numer} age
+ * @param {numer} a
+ * @param {numer} b
  * @returns {boolean}
  */
-let isAdult = function (age = 0, ADULT=18) {
-  return age >= ADULT;
-
-  // if (age < 18) {
-  //   return false;
-  // }
-  // return true;
+let checkMultiplicity = function (a, b) {
+  return a % b === 0;
 };
-const result = isAdult(18, 21);
-console.log(result);
+
+/**
+ *
+ * @param {numer} number
+ * @returns {boolean}
+ */
+let checkNumber = function (number = 0, bigger = 20, aliqout = 7) {
+  return number > bigger && number % aliqout === 0;
+};
