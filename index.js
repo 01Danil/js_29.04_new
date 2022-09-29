@@ -1,21 +1,15 @@
-// найти периметр квадрата
-// сторона *4
-//const sideSquare = prompt("enter side square", "10");
 /**
- * 
- * @param {number} side 
- * @returns {null | number }
+ *
+ * @param {numer} age
+ * @returns {boolean}
  */
-const calkPerimetrSquare = function (side=0) {
-	if(side<0){
-		return null;
-	}
-  return side*4;
+let isAdult = function (age = 0, ADULT=18) {
+  return age >= ADULT;
+
+  // if (age < 18) {
+  //   return false;
+  // }
+  // return true;
 };
-console.log(calkPerimetrSquare());
-//console.log(calkPerimetrSquare(sideSquare));
-console.log(calkPerimetrSquare(8));
-const result = calkPerimetrSquare(8);
-if(result===null){
-	alert("Введи положительное число")
-};
+const result = isAdult(18, 21);
+console.log(result);
